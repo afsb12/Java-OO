@@ -12,7 +12,7 @@ public class TestaBanco {
         System.out.println(contaAlisson.titular.nome);
         System.out.println(contaAlisson.titular.cpf);
         System.out.println(contaAlisson.titular.profissao);
-        System.out.println(contaAlisson.saldo);
+        System.out.println(contaAlisson.pegaSaldo());
 
     }
 }
