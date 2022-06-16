@@ -1,5 +1,5 @@
 public class Conta {
-    double saldo;
+    private double saldo;
     int agencia;
     int numero;
     Cliente titular;
@@ -23,5 +23,9 @@ public class Conta {
         this.saca(valor);
         conta.deposita(valor);
         return true;
+    }
+
+    public double pegaSaldo(){
+        return this.saldo;
     }
 }
