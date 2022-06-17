@@ -1,0 +1,39 @@
+public class Conta {
+    private double saldo;
+    private int agencia;
+    private int numero;
+    Cliente titular;
+
+    public void deposita(double valor){
+        this.saldo += valor;
+    }
+
+    public boolean saca(double valor){
+        if (this.saldo < valor) {
+            return false;
+        }
+        this.saldo -= valor;
+        return true;
+    }
+
+    public boolean transfere(double valor, Conta conta){
+        if (this.saldo < valor){
+            return false;
+        }
+        this.saca(valor);
+        conta.deposita(valor);
+        return true;
+    }
+
+    public double getSaldo(){
+        return this.saldo;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+}
