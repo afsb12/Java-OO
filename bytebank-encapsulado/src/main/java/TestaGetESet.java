@@ -2,7 +2,7 @@ import java.awt.event.ActionListener;
 
 public class TestaGetESet {
     public static void main(String[] args) {
-        Conta conta = new Conta();
+        Conta conta = new Conta(123,321);
         conta.setNumero(1337);
         System.out.println(conta.getNumero());
 
