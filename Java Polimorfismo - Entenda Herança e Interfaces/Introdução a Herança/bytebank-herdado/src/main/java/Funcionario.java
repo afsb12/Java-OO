@@ -24,6 +24,9 @@ public class Funcionario {
     }
 
     public void setCpf(String cpf) {
+        if (cpf.length() > 11){
+            System.out.println("Cpf com tamanho inválido.");
+        }
         this.cpf = cpf;
     }
 
@@ -33,7 +36,7 @@ public class Funcionario {
 
     public void setSalario(double salario) {
         if (salario <= 0 ){
-            System.out.println("Salário não pode ser menor ou igual a zero");
+            System.out.println("Salário não pode ser menor ou igual a zero.");
             return;
         }
         this.salario = salario;
