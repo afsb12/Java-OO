@@ -25,7 +25,7 @@ public class Conta {
         return true;
     }
 
-    public double pegaSaldo(){
+    public double getSaldo(){
         return this.saldo;
     }
 }
